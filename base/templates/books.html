@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Talia Peled - Books</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+  </style>
+   {% load static %}
+</head>
+<body>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1>ספריה של טליה פלד</h1>
+  <p></p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link active" href="{% url 'index' %}">בית</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'books' %}">ספרים</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog' %}">בלוג</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">צרו קשר</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>אודות טליה</h2>
+      <h5></h5>
+      <img src="{% static 'talia2.jpg' %}" alt="Talia Peled" class="fakeimg">
+      <p>סופרת, יוצרת תוכן, מתרגמת, עורכת ובלוגרית
+
+        היא בוגרת בית הספר לעיתונאות באוניברסיטת תל אביב
+        
+        בעלת נסיון של שנים רבות בכתיבת תוכן לאסטרטגיה שיווקית
+        
+        עד כה יצאו לאור שניים מספריה: &quot;איש הזכוכית&quot; ו&quot;חקוקה באבן&quot;
+        
+        הספר השלישי בכתיבה בימים אלו
+        
+        כרגע עובדת על תרגומם של ספריה והפיכתם לתסריט
+        
+        עוסקת בתרגום לתחום הוואב לוקליזישון לחברות המובילות בעולם ההיי טק
+        
+        בלוגרית מצליחה המוכרת ברשת בשם &quot;אחת שנוסעת&quot;
+        
+        נשואה לעודד ואמא לאורנית וניר
+        
+        מתגוררת במודיעין.</p>
+      <h3 class="mt-4">עקבו אחרי</h3>
+      <p></p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100000327112075&mibextid=LQQJ4d">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter:@taltal84</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://instagram.com/taliapeled_nathaniel?igshid=YTQwZjQ0NmI0OA==">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <h2>על הספרים</h2>
+      <div class="card">
+        <img src="{% static 'איש הזכוכית.jpg' %}" alt="Book 1" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">איש הזכוכית</h5>
+          <p class="card-text">מתוך הספר &quot;איש הזכוכית&quot;
+
+            הייתה זאת שעת בין ערביים ודאוד, עייף מטרדות היום, מצא עצמו יושב על כיסא, מביט חרישית
+            אל הים. אלוהים שלי, מה אני יודע? פנה אליו בליבו. אני רק איש של זכוכית ועץ, נגר פשוט. אבל
+            הבן שלי, הבן היקר שלי הזה, אם תחזיר אותו אליי אודה לך כל חיי ואעשה כל שאוכל כדי
+            להודות לך על החסד הגדול הזה. 
+            
+            הימים, ימי מלחמת העולם השנייה. המקום – תלאביב. בנו של דאוד, סאלח, נעדר לאחר שנמלט
+            ממחנה שבויים גרמני על אדמת יוון. מה עלה בגורלו? האם שב משדה הקרב והתאחד עם משפחתו ועם
+            הוריו, חנה ודאוד, אשר בשנות העשרים של המאה הקודמת הגיעו לפלשתינה מעירק והשתקעו בשכונת
+            נווה שלום שבפאתי תל אביב?
+            בספר נעשה שימוש בפסיפס של דמויות המספרות את הסיפור מנקודות מבט שונות ומגוונות, המספרות
+            את סיפור משפחתם של חנה ודאוד הנארג אל תוך החיים בתל-אביב של ימי המנדט ואל סיפורה של
+            המדינה שבדרך. בסיפורם משתקפים חיי היומיום, המסורת והמנהגים של יהודי עירק בגולה ובארץ.</p>
+          <a href="#" class="btn btn-primary">בחזרה לראש הדף</a>
+        </div>
+      </div>
+      
+      <div class="card mt-4">
+        <img src="{% static 'חקוקה .jpg' %}" alt="Book 2" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">חקוקה באבן</h5>
+          <p class="card-text">מתוך הספר &quot;חקוקה באבן&quot;
+
+            רוחות קרירות של ספטמבר... הייתכן כי רק לפני שנה עמדתי בדיוק בתקופה זו מול כנסיית
+            הקבר הקדוש בירושלים, שאותה שיפץ בני אהובי אמרליך? &quot;בשבילך אימא...&quot; הציג בפניי את
+            תוכניותיו, ביודעו עד כמה אהוב עליי היופי. &quot;אני רוצה שדמותך תהיה חקוקה באבן, חקוקה
+            באבניה של העיר הזו כך שלעולם לא יישכח כי חיה כאן מלכה בשם מליסנדה&quot;.
+            חקוקה באבן הוא סיפורה של מליסנדה המלכה הצלבנית של ירושלים, שחייתה כאן לפני כאלף שנה,
+             ומי שניצבה בשורה אחת לצד השליטים הגדולים של תקופתה. היא הואשמה בבגידה על ידי בעלה,
+            יצאה למלחמה נגד בנה וניהלה ביד רמה את חיי שלושת אחיותיה. הספר כתוב בלשון ציורית ועשירה
+            המעבירה את האווירה וה&#39;ניחוח&#39; ההיסטורי של אחת התקופות המסעירות בתולדות האזור: ימי שלטון
+            הצלבנים בארץ ישראל. דמותה של מליסנדה מוצגת כאנושית, חיה, ומעוררת עניין, והסיפור ההיסטורי
+            הופך לרומן האורג בתוכו תככים, תשוקות, ואתגרים..</p>
+          <a href="#" class="btn btn-primary">בחזרה לראש הדף</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>&copy; 2023 על שם טליה פלד   נבנה על ידי ניר פלד כול הזכויות שמורות</p>
+</div>
+
+</body>
+</html>

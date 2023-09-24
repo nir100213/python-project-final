@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Talia Peled</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1>צרו קשר</h1>
+  <p>צרו קשר בנוגע לרכישת הספרים או כול נושא אחר</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link active" href="{% url 'index' %}">בית</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'books' %}">ספרים</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog' %}">בלוג</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">צרו קשר</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>פרטי קשר</h2>
+      <p></p>
+      <address>
+        <strong>טליה פלד</strong><br>
+       
+        <abbr title="Phone">מספר טלפון (להזמנת ספרים דרך ווצאפ):</abbr> (972) 054-2465342<br>
+        <abbr title="Email">אימייל:</abbr> <a href="mailto:nirpeled95@gmail.com">tlpeled8@gmail.com</a>
+      </address>
+    </div>
+    <div class="col-sm-6">
+      
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>&copy; 2023 על שם טליה פלד   נבנה על ידי ניר פלד כול הזכויות שמורות</p>
+</div>
+
+</body>
+</html>
